@@ -29,6 +29,7 @@
 		"eslint-plugin-react": "^7.17.0",
 		"eslint-plugin-react-hooks": "^2.3.0",
 		"prettier": "^1.19.1",
+		"rimraf": "^3.0.0",
 		"typescript": "^3.7.3",
 		"xo": "^0.25.3"
 	},
@@ -58,7 +59,7 @@
 		"build": "next build",
 		"dev": "next",
 		"lint": "xo",
-		"prebuild": "rm -rf tsc_output",
+		"prebuild": "rimraf tsc_output",
 		"start": "next start",
 		"style": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{sc,c,le}ss,json,m{d,dx},{y,ya}ml}\""
 	},
