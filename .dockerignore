@@ -181,3 +181,6 @@ $RECYCLE.BIN/
 tsc_output
 
 !public
+
+# Static site output
+out
