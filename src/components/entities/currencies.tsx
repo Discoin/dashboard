@@ -1,5 +1,5 @@
 import React from 'react';
-import {Datagrid, List, NumberField, TextField} from 'react-admin';
+import {Datagrid, List, NumberField, TextField, Show, SimpleShowLayout} from 'react-admin';
 
 interface Currency {
 	id: string;
@@ -8,9 +8,20 @@ interface Currency {
 	reserve: number;
 }
 
+export const CurrencyShows = (props: Record<string, unknown>) => (
+	<Show {...props}>
+		<SimpleShowLayout>
+			<TextField label='ID' source='id' />
+			<TextField source='name' />
+			<NumberField label='Value in Discoin' source='value' />
+			<NumberField source='reserve' />{' '}
+		</SimpleShowLayout>
+	</Show>
+);
+
 export const CurrencyList = (props: Record<string, unknown>) => (
-	<List {...props}>
-		<Datagrid>
+	<List {...props} bulkActionButtons={false}>
+		<Datagrid rowClick='show'>
 			<TextField label='ID' source='id' />
 			<TextField source='name' />
 			<NumberField label='Value in Discoin' source='value' />
