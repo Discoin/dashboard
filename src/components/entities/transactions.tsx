@@ -8,8 +8,7 @@ import {
 	Show,
 	SimpleShowLayout,
 	NumberField,
-	TextField,
-	ReferenceField
+	TextField
 } from 'react-admin';
 
 export const TransactionShow = (props: Record<string, unknown>) => (
@@ -21,12 +20,14 @@ export const TransactionShow = (props: Record<string, unknown>) => (
 			<BooleanField label='Handled' source='handled' />
 			<DateField label='Timestamp' source='timestamp' />
 			<NumberField label='Payout' source='payout' />
-			<ReferenceField label='From currency' source='from.id' reference='currencies'>
+			<ChipField label='From currency' source='from.id' />
+			<ChipField label='To currency' source='to.id' />
+			{/* <ReferenceField label='From currency' source='from.id' reference='currencies'>
 				<ChipField source='id' />
 			</ReferenceField>
 			<ReferenceField label='To currency' source='to.id' reference='currencies'>
 				<ChipField source='id' />
-			</ReferenceField>
+			</ReferenceField> */}
 		</SimpleShowLayout>
 	</Show>
 );
@@ -40,12 +41,14 @@ export const TransactionList = (props: Record<string, unknown>) => (
 			<BooleanField label='Handled' source='handled' />
 			<DateField label='Timestamp' source='timestamp' />
 			<NumberField label='Payout' source='payout' />
-			<ReferenceField label='From currency' source='from.id' reference='currencies'>
+			<ChipField label='From currency' source='from.id' />
+			<ChipField label='To currency' source='to.id' />
+			{/* <ReferenceField label='From currency' source='from.id' reference='currencies'>
 				<ChipField source='id' />
 			</ReferenceField>
 			<ReferenceField label='To currency' source='to.id' reference='currencies'>
 				<ChipField source='id' />
-			</ReferenceField>
+			</ReferenceField> */}
 		</Datagrid>
 	</List>
 );
