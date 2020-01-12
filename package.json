@@ -8,7 +8,9 @@
 		"url": "https://github.com/discoin/dashboard/issues"
 	},
 	"dependencies": {
+		"@discoin/scambio": "^2.0.0",
 		"@fusionworks/ra-data-nest-crud": "^1.0.8",
+		"@nestjsx/crud-request": "^4.4.1",
 		"next": "^9.1.6",
 		"query-string": "^6.9.0",
 		"react": "^16.12.0",
@@ -27,6 +29,7 @@
 		"eslint-plugin-react": "^7.17.0",
 		"eslint-plugin-react-hooks": "^2.3.0",
 		"prettier": "^1.19.1",
+		"ra-core": "^3.1.2",
 		"typescript": "^3.7.3",
 		"xo": "^0.25.3"
 	},
