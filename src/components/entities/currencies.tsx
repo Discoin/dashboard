@@ -27,8 +27,8 @@ export const CurrencyShow = (props: Record<string, unknown>) => (
 		<SimpleShowLayout>
 			<TextField label='ID' source='id' />
 			<TextField source='name' />
-			<NumberField label='Value in Discoin' source='value' options={{maximumFractionDigits: 2}} />
-			<NumberField source='reserve' options={{maximumFractionDigits: 4}} />
+			<NumberField label='Value in Discoin' source='value' options={{maximumFractionDigits: 4}} />
+			<NumberField source='reserve' options={{maximumFractionDigits: 2}} />
 		</SimpleShowLayout>
 	</Show>
 );
@@ -38,8 +38,8 @@ export const CurrencyList = (props: Record<string, unknown>) => (
 		<Datagrid rowClick='show'>
 			<TextField label='ID' source='id' />
 			<TextField source='name' />
-			<NumberField label='Value in Discoin' source='value' options={{maximumFractionDigits: 2}} />
-			<NumberField source='reserve' options={{maximumFractionDigits: 4}} />
+			<NumberField label='Value in Discoin' source='value' options={{maximumFractionDigits: 4}} />
+			<NumberField source='reserve' options={{maximumFractionDigits: 2}} />
 		</Datagrid>
 	</List>
 );
