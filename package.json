@@ -8,7 +8,7 @@
 		"url": "https://github.com/discoin/dashboard/issues"
 	},
 	"dependencies": {
-		"@discoin/scambio": "^2.0.0",
+		"@discoin/scambio": "^2.0.1",
 		"@nestjsx/crud-request": "^4.4.1",
 		"next": "^9.1.6",
 		"query-string": "^6.9.0",
