@@ -57,6 +57,7 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next",
+		"export": "next export",
 		"lint": "xo",
 		"start": "next start",
 		"style": "prettier --ignore-path .gitignore --check \"./**/*.{{j,t}{s,sx},flow,{sc,c,le}ss,json,m{d,dx},{y,ya}ml}\""
