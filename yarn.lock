@@ -921,10 +921,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@discoin/scambio@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@discoin/scambio/-/scambio-2.0.0.tgz#e295af35bdacf5663e4dd2608c2143607854d092"
-  integrity sha512-kaW7uUmFnJ0V4UAEC0TMQfVd/dxnUxWyOLI5LPEEURw/dcrkAQUzRC7DgpgU3iZ/yAjrkq7/xByY1y3HEo4dTw==
+"@discoin/scambio@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@discoin/scambio/-/scambio-2.0.1.tgz#b05ae24779f64dab09f36a4c840fda0e23a0f061"
+  integrity sha512-DwTrVKoj+a+f7qlMe+k5TY5O50APhALKxEIUymkuJpFpY2Sj929oZNJAkdM1zqI1gstjrrbpIa5aT3VATh8gzQ==
   dependencies:
     ky "^0.16.1"
     ky-universal "^0.3.0"
