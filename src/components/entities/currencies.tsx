@@ -1,16 +1,14 @@
 import React from 'react';
 import {
 	Datagrid,
-	List,
 	Filter,
-	ReferenceInput,
-	SelectInput,
-	NumberInput,
+	List,
 	NumberField,
-	TextInput,
-	TextField,
+	NumberInput,
 	Show,
-	SimpleShowLayout
+	SimpleShowLayout,
+	TextField,
+	TextInput
 } from 'react-admin';
 
 const CurrenciesFilter = (props: Record<string, unknown>) => {
@@ -29,8 +27,8 @@ export const CurrencyShow = (props: Record<string, unknown>) => (
 		<SimpleShowLayout>
 			<TextField label='ID' source='id' />
 			<TextField source='name' />
-			<NumberField label='Value in Discoin' source='value' />
-			<NumberField source='reserve' />{' '}
+			<NumberField label='Value in Discoin' source='value' options={{maximumFractionDigits: 2}} />
+			<NumberField source='reserve' options={{maximumFractionDigits: 4}} />
 		</SimpleShowLayout>
 	</Show>
 );
@@ -40,8 +38,8 @@ export const CurrencyList = (props: Record<string, unknown>) => (
 		<Datagrid rowClick='show'>
 			<TextField label='ID' source='id' />
 			<TextField source='name' />
-			<NumberField label='Value in Discoin' source='value' />
-			<NumberField source='reserve' />
+			<NumberField label='Value in Discoin' source='value' options={{maximumFractionDigits: 2}} />
+			<NumberField source='reserve' options={{maximumFractionDigits: 4}} />
 		</Datagrid>
 	</List>
 );
