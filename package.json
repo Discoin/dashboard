@@ -13,7 +13,7 @@
 		"next": "^9.1.7",
 		"query-string": "^6.9.0",
 		"react": "^16.12.0",
-		"react-admin": "^3.1.1",
+		"react-admin": "^3.1.2",
 		"react-dom": "^16.12.0"
 	},
 	"devDependencies": {
