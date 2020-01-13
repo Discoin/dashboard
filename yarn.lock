@@ -935,13 +935,6 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.7.3.tgz#a166882c81c0c6040975dd30df24fae8549bd96f"
   integrity sha512-14ZVlsB9akwvydAdaEnVnvqu6J2P6ySv39hYyl/aoB6w/V+bXX0tay8cF6paqbgZsN2n5Xh15uF4pE+GvE+itw==
 
-"@fusionworks/ra-data-nest-crud@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@fusionworks/ra-data-nest-crud/-/ra-data-nest-crud-1.0.8.tgz#f85ef3d0b143a595038e7c9e58614887b1910c77"
-  integrity sha512-O4yv5nGqjLIApEsu0ni7jfVOGvv1uzv1CBxv4vfLpNQK3lk0/9qZwAUfJyHldgNh7D+PFs+UABiszFdsjGlxeA==
-  dependencies:
-    "@nestjsx/crud-request" "^4.1.0"
-
 "@jest/types@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-24.9.0.tgz#63cb26cb7500d069e5a389441a7c6ab5e909fc59"
@@ -1033,14 +1026,6 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjsx/crud-request@^4.1.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@nestjsx/crud-request/-/crud-request-4.3.0.tgz#f7b753eeba6de708fa60c38f72094a5ef0e22899"
-  integrity sha512-1rCXiBan6K1G4YvI6Oyh/M9OPDjriEMXA1t/wDW2lKQXRxfsB8rvl1IYiyIegGQstzuW5xI+4A9ZgPHQBKG+RA==
-  dependencies:
-    "@nestjsx/util" "^4.3.0"
-    qs "^6.8.0"
-
 "@nestjsx/crud-request@^4.4.1":
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/@nestjsx/crud-request/-/crud-request-4.4.1.tgz#fcd0bd909c2dccb13c32a61bbe2c3b858402d142"
@@ -1048,11 +1033,6 @@
   dependencies:
     "@nestjsx/util" "^4.4.1"
     qs "^6.8.0"
-
-"@nestjsx/util@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@nestjsx/util/-/util-4.3.0.tgz#c90c88088c5d85b73f894358f08982ec868c84bf"
-  integrity sha512-kJePz2IEfl0oeQD6tUUe87W1byQ+SBT2WTXXyjnAQu568jEPJCTHG72C/0bBM+E6pp7C6uvMbC/SW2S6ABM1mA==
 
 "@nestjsx/util@^4.4.1":
   version "4.4.1"

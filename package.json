@@ -9,7 +9,6 @@
 	},
 	"dependencies": {
 		"@discoin/scambio": "^2.0.0",
-		"@fusionworks/ra-data-nest-crud": "^1.0.8",
 		"@nestjsx/crud-request": "^4.4.1",
 		"next": "^9.1.6",
 		"query-string": "^6.9.0",
