@@ -11,7 +11,7 @@
 		"@discoin/scambio": "^2.0.2",
 		"@nestjsx/crud-request": "^4.4.1",
 		"next": "^9.2.0",
-		"query-string": "^6.9.0",
+		"query-string": "^6.10.1",
 		"react": "^16.12.0",
 		"react-admin": "^3.1.2",
 		"react-dom": "^16.12.0"
