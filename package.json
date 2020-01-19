@@ -8,10 +8,10 @@
 		"url": "https://github.com/discoin/dashboard/issues"
 	},
 	"dependencies": {
-		"@discoin/scambio": "^2.0.1",
+		"@discoin/scambio": "^2.0.3",
 		"@nestjsx/crud-request": "^4.4.1",
-		"next": "^9.1.7",
-		"query-string": "^6.9.0",
+		"next": "^9.2.0",
+		"query-string": "^6.10.1",
 		"react": "^16.12.0",
 		"react-admin": "^3.1.2",
 		"react-dom": "^16.12.0"
@@ -20,16 +20,16 @@
 		"@types/node": "^12.12.25",
 		"@types/react": "^16.9.17",
 		"@types/react-dom": "^16.9.0",
-		"@typescript-eslint/eslint-plugin": "^2.12.0",
-		"@typescript-eslint/parser": "^2.15.0",
+		"@typescript-eslint/eslint-plugin": "^2.16.0",
+		"@typescript-eslint/parser": "^2.16.0",
 		"eslint-config-xo": "^0.27.2",
-		"eslint-config-xo-react": "^0.20.0",
-		"eslint-config-xo-typescript": "^0.23.0",
-		"eslint-plugin-react": "^7.17.0",
+		"eslint-config-xo-react": "^0.22.0",
+		"eslint-config-xo-typescript": "^0.24.1",
+		"eslint-plugin-react": "^7.18.0",
 		"eslint-plugin-react-hooks": "^2.3.0",
 		"prettier": "^1.19.1",
 		"ra-core": "^3.1.2",
-		"typescript": "^3.7.4",
+		"typescript": "^3.7.5",
 		"xo": "^0.25.3"
 	},
 	"engines": {
