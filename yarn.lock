@@ -3229,10 +3229,10 @@ eslint-config-xo@^0.27.1:
   resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.27.2.tgz#71aff3d5b5554e9e5b5e1853e21da7799bb53f1f"
   integrity sha512-qEuZP0zNQkWpOdNZvWnfY2GNp1AZ33uXgeOXl4DN5YVLHFvekHbeSM2FFZ8A489fp1rCCColVRlJsYMf28o4DA==
 
-eslint-config-xo@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.28.0.tgz#e1f22609b522ded7af4986169cedb426fe2ed957"
-  integrity sha512-cc/csVIZ4pVnJqXKgbWqiktI03kPp5CL5ERir8GtyZzvlr22Vm41zqT3TWaEbdWOZiMbYtRmoLJ5rSQKuout3A==
+eslint-config-xo@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.29.0.tgz#d67e514f1047cd5388f75c9c574015eff38c705e"
+  integrity sha512-T1pgAOcIRSPXlgQPWI8fxDpIU1XRFSQW1RxtvHJPnZUV5KaHW4juKZUdAmTaPqOV1cp0wIkP32kVO1vKMWk6Jw==
   dependencies:
     confusing-browser-globals "1.0.9"
 
