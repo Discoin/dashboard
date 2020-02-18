@@ -10,7 +10,7 @@
 	"dependencies": {
 		"@discoin/scambio": "^2.0.3",
 		"@nestjsx/crud-request": "^4.4.1",
-		"next": "^9.2.1",
+		"next": "^9.2.2",
 		"query-string": "^6.11.0",
 		"react": "^16.12.0",
 		"react-admin": "^3.2.2",
