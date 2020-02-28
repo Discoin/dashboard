@@ -944,14 +944,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@discoin/scambio@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@discoin/scambio/-/scambio-2.0.3.tgz#a91ab878480f0434d10c761e9dc0d059e35140d4"
-  integrity sha512-Tbd04ck/XFxLil71ufxhjhZYkxl422NjuljN3U3QpdHk29ClDKQ1nGIA/vAO6jMwxqL90MItfzYnahAJMDt1eg==
+"@discoin/scambio@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@discoin/scambio/-/scambio-2.0.4.tgz#d8e4ff1340d0fa9972e61ea584446d3f2c0a24f1"
+  integrity sha512-ZaomUlMNqg0Q8pvGHUcoStPhjHNySOdjCq8XUGu3WqdnAqRPNFXV9IUK5+HpO78A8GgvzHjeH0JnutBaSGUcpg==
   dependencies:
-    ky "^0.16.1"
-    ky-universal "^0.3.0"
-    node-fetch "^2.6.0"
+    ky "^0.18.0"
+    ky-universal "^0.5.0"
 
 "@emotion/hash@^0.7.1":
   version "0.7.3"
@@ -5145,18 +5144,18 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
 
-ky-universal@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/ky-universal/-/ky-universal-0.3.0.tgz#3fcbb0dd03da39b5f05100d9362a630d5e1d402e"
-  integrity sha512-CM4Bgb2zZZpsprcjI6DNYTaH3oGHXL2u7BU4DK+lfCuC4snkt9/WRpMYeKbBbXscvKkeqBwzzjFX2WwmKY5K/A==
+ky-universal@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/ky-universal/-/ky-universal-0.5.0.tgz#16d5fe881fb98e54732a4f0b7d531d44cbf701cb"
+  integrity sha512-O+0wjCua5i45lYBZrBy8TyRDRVodtsmzVC/MlE5FN7ZMFu/Icz7ekbZ85sdFw0F/JwGhXZTaKjXq9IgUGwGedQ==
   dependencies:
     abort-controller "^3.0.0"
     node-fetch "^2.6.0"
 
-ky@^0.16.1:
-  version "0.16.1"
-  resolved "https://registry.yarnpkg.com/ky/-/ky-0.16.1.tgz#1b7e14b1a964525b270fca5faf3bbf9e47ac8c8a"
-  integrity sha512-olhyGihJ8XOxP8dhdXXDFu1FfowsmkQznI33KNTl4Woa3T/UDBEV/FR8Y8Pe1cJ3ofVnlflcXRUE8a3Phwr3Og==
+ky@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/ky/-/ky-0.18.0.tgz#23b46f14c76b646da434b2a34a934b69e8317144"
+  integrity sha512-B/Gjri1BAQa1+P7jjj2FYTWIbiYwDDozNvQOv8HUq24cD+a3D3tANxLjnISrrKeiG3B2N3aVE6z9hV+o1n5JGg==
 
 latest-version@^5.0.0:
   version "5.1.0"
