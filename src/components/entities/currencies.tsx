@@ -11,10 +11,10 @@ import {
 	TextInput
 } from 'react-admin';
 
-const CurrenciesFilter = (props: Record<string, unknown>) => {
+const CurrenciesFilter = (props: Record<string, unknown>): JSX.Element => {
 	return (
 		<Filter {...props}>
-			<TextInput label='Search' source='id' alwaysOn />
+			<TextInput alwaysOn label='Search' source='id' />
 			<TextInput label='Name' source='name' />
 			<NumberInput source='value' />
 			<NumberInput source='reserve' />
@@ -22,7 +22,7 @@ const CurrenciesFilter = (props: Record<string, unknown>) => {
 	);
 };
 
-export const CurrencyShow = (props: Record<string, unknown>) => (
+export const CurrencyShow = (props: Record<string, unknown>): JSX.Element => (
 	<Show {...props}>
 		<SimpleShowLayout>
 			<TextField label='ID' source='id' />
@@ -33,7 +33,7 @@ export const CurrencyShow = (props: Record<string, unknown>) => (
 	</Show>
 );
 
-export const CurrencyList = (props: Record<string, unknown>) => (
+export const CurrencyList = (props: Record<string, unknown>): JSX.Element => (
 	<List {...props} bulkActionButtons={false} perPage={25} filters={<CurrenciesFilter />}>
 		<Datagrid rowClick='show'>
 			<TextField label='ID' source='id' />

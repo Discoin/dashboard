@@ -11,7 +11,7 @@ import Client from '@discoin/scambio';
 const client = new Client('dashboard', 'DASH');
 const dataProvider = scambioProvider(client);
 
-export function AdminDashboard(): JSX.Element {
+export const AdminDashboard = (): JSX.Element => {
 	return (
 		<Admin dashboard={dashboardCard} dataProvider={dataProvider}>
 			<Resource name='transactions' list={TransactionList} show={TransactionShow} icon={Send} />
@@ -19,4 +19,4 @@ export function AdminDashboard(): JSX.Element {
 			<Resource name='currencies' list={CurrencyList} show={CurrencyShow} icon={AttachMoney} />
 		</Admin>
 	);
-}
+};
