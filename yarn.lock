@@ -7005,10 +7005,10 @@ quick-lru@^1.0.0:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
   integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
 
-ra-core@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/ra-core/-/ra-core-3.2.3.tgz#b59e7b68a5824a68ac4abf3929c2236fdd13d160"
-  integrity sha512-VXAjgpyuf8LEX7Xp0vmEYGM58D7vd5DVs08MNgSJI887ep0ZwYHwrRn/VP5pka1An8zN6D7AEVpmda8q2rkhpA==
+ra-core@^3.2.3, ra-core@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/ra-core/-/ra-core-3.2.4.tgz#5d3fcf46be8bd05eea3767cc092748f401e1aedb"
+  integrity sha512-B98IlBLceytKrEsoM5rQ/eocD2N2gyPfDcA6Hx2b4FMnVLL6io9KQDPRnAED4JFEp68Md1BZ7UuZmP94cH1o4w==
   dependencies:
     "@testing-library/react" "^8.0.7"
     classnames "~2.2.5"
