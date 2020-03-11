@@ -4,31 +4,31 @@ import {RequestQueryBuilder, CondOperator} from '@nestjsx/crud-request';
 
 type DiscoinEntity = 'transactions' | 'bots' | 'currencies';
 
-const flattenObject = (obj: Record<string, any>, prefix = ''): Record<string, any> =>
-	Object.keys(obj).reduce((acc, k) => {
+const flattenObject = (object, prefix = ''): Record<string, any> =>
+	Object.keys(object).reduce((acc, k) => {
 		const pre = prefix.length === 0 ? '' : `${prefix}.`;
-		if (typeof obj[k] === 'object') Object.assign(acc, flattenObject(obj[k], pre + k));
+		if (typeof object[k] === 'object') Object.assign(acc, flattenObject(object[k], pre + k));
 		// @ts-ignore
-		else acc[pre + k] = obj[k];
+		else acc[pre + k] = object[k];
 		return acc;
 	}, {});
 
 export const scambioProvider = (client: Client): DataProvider => ({
 	// @ts-ignore
-	getList: async (resource: DiscoinEntity, params) => {
+	getList: async (resource: DiscoinEntity, parameters) => {
 		const qb = RequestQueryBuilder.create()
-			.setLimit(params.pagination.perPage)
-			.setOffset((params.pagination.page - 1) * params.pagination.perPage)
+			.setLimit(parameters.pagination.perPage)
+			.setOffset((parameters.pagination.page - 1) * parameters.pagination.perPage)
 			.sortBy({
-				field: params.sort.field,
-				order: params.sort.order as 'ASC' | 'DESC'
+				field: parameters.sort.field,
+				order: parameters.sort.order as 'ASC' | 'DESC'
 			});
 
-		console.log('Filter:', params.filter);
+		console.log('Filter:', parameters.filter);
 
-		for (const key in flattenObject(params.filter)) {
-			if (Object.prototype.hasOwnProperty.call(params.filter, key)) {
-				const element = params.filter[key];
+		for (const key in flattenObject(parameters.filter)) {
+			if (Object.prototype.hasOwnProperty.call(parameters.filter, key)) {
+				const element = parameters.filter[key];
 				qb.setFilter({
 					field: key,
 					value: element,
@@ -48,8 +48,8 @@ export const scambioProvider = (client: Client): DataProvider => ({
 	},
 
 	// @ts-ignore
-	getOne: async (resource: DiscoinEntity, params) => {
-		const id = typeof params.id === 'number' ? params.id.toString() : params.id;
+	getOne: async (resource: DiscoinEntity, parameters) => {
+		const id = typeof parameters.id === 'number' ? parameters.id.toString() : parameters.id;
 
 		let entity;
 
@@ -63,12 +63,12 @@ export const scambioProvider = (client: Client): DataProvider => ({
 	},
 
 	// @ts-ignore
-	getMany: async (resource: DiscoinEntity, params) => {
+	getMany: async (resource: DiscoinEntity, parameters) => {
 		const query = RequestQueryBuilder.create()
 			.setFilter({
 				field: 'id',
 				operator: CondOperator.IN,
-				value: params.ids.join(',')
+				value: parameters.ids.join(',')
 			})
 			.query();
 
@@ -80,17 +80,17 @@ export const scambioProvider = (client: Client): DataProvider => ({
 	},
 
 	// @ts-ignore
-	getManyReference: async (resource: DiscoinEntity, params) => {
+	getManyReference: async (resource: DiscoinEntity, parameters) => {
 		const qb = RequestQueryBuilder.create();
 
-		qb.setPage(params.pagination.page)
-			.setOffset((params.pagination.page - 1) * params.pagination.perPage)
-			.setFilter({field: params.target, operator: CondOperator.EQUALS, value: params.id})
+		qb.setPage(parameters.pagination.page)
+			.setOffset((parameters.pagination.page - 1) * parameters.pagination.perPage)
+			.setFilter({field: parameters.target, operator: CondOperator.EQUALS, value: parameters.id})
 			.sortBy({
-				field: params.sort.field,
-				order: params.sort.order as 'ASC' | 'DESC'
+				field: parameters.sort.field,
+				order: parameters.sort.order as 'ASC' | 'DESC'
 			})
-			.setLimit(params.pagination.perPage);
+			.setLimit(parameters.pagination.perPage);
 
 		if (resource === 'transactions') {
 			return client.transactions.getMany(qb.query());
@@ -100,41 +100,41 @@ export const scambioProvider = (client: Client): DataProvider => ({
 	},
 
 	// @ts-ignore
-	update: async (resource: DiscoinEntity, params) => {
+	update: async (resource: DiscoinEntity, parameters) => {
 		if (resource !== 'transactions') {
 			throw new Error('Not implemented');
 		}
 
-		const transaction = await client.transactions.getOne(params.id as string);
-		return transaction.update(params.data);
+		const transaction = await client.transactions.getOne(parameters.id as string);
+		return transaction.update(parameters.data);
 	},
 
 	// @ts-ignore
-	updateMany: async (resource: DiscoinEntity, params) => {
+	updateMany: async (resource: DiscoinEntity, parameters) => {
 		if (resource !== 'transactions') {
 			throw new Error('Not implemented');
 		}
 
-		return params.ids.map(async id => {
+		return parameters.ids.map(async id => {
 			const transaction = await client.transactions.getOne(id as string);
-			return transaction.update(params.data);
+			return transaction.update(parameters.data);
 		});
 	},
 
 	// @ts-ignore
-	create: async (resource: DiscoinEntity, params) => {
+	create: async (resource: DiscoinEntity, parameters) => {
 		if (resource !== 'transactions') {
 			throw new Error('Not implemented');
 		}
 
-		return client.transactions.create(params.data);
+		return client.transactions.create(parameters.data);
 	},
 
-	delete: async (_resource, _params) => {
+	delete: async (_resource, _parameters) => {
 		throw new Error('Not implemented');
 	},
 
-	deleteMany: async (_resource, _params) => {
+	deleteMany: async (_resource, _parameters) => {
 		throw new Error('Not implemented');
 	}
 });
