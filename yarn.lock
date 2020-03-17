@@ -1044,18 +1044,18 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjsx/crud-request@^4.4.1":
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@nestjsx/crud-request/-/crud-request-4.4.1.tgz#fcd0bd909c2dccb13c32a61bbe2c3b858402d142"
-  integrity sha512-Ukzu7xQJKOCGI4BalDL2x/9z6D9r81iGYq0/h3KvIwu25J+2IN5dlXzqqE/4yHYO/0Mdtj15dQiDKWKGwKg8nQ==
+"@nestjsx/crud-request@^4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@nestjsx/crud-request/-/crud-request-4.4.2.tgz#5f88f765b9456de8edcfdc9804c193583e3b30c3"
+  integrity sha512-ayNMER3Jl/LpUDrbp/0uouHNoaK4fQSlcBVRXSMhDonimcrSI/EDTUp0ESza6DqS2jB/MRdMpS2pbA40XA0llQ==
   dependencies:
-    "@nestjsx/util" "^4.4.1"
+    "@nestjsx/util" "^4.4.2"
     qs "^6.8.0"
 
-"@nestjsx/util@^4.4.1":
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@nestjsx/util/-/util-4.4.1.tgz#17e494bf55f687a28cacc02e0e1234b4d0c42e5f"
-  integrity sha512-iJSPGgbkOcHZTuXfXhix8n0Nldhbx2aJlU/j/fVAfBu7Et0dQR77Vnnx3kzsUWz63ElQy3GEz/ptJXyN283SPQ==
+"@nestjsx/util@^4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@nestjsx/util/-/util-4.4.2.tgz#5ea31c718bb820eba96f14a1e9166d032d0b7a3f"
+  integrity sha512-5xafmEVfPT3SmvDnXzb689fW6KOCSp8LG0EyC1PbX5pC6vssDojBYDPyQdJBxHdD0bceNN1NSMNCIQGHip5Gxw==
 
 "@next/polyfill-nomodule@9.3.0":
   version "9.3.0"
