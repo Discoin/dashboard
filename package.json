@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"@discoin/scambio": "^2.0.4",
-		"@material-ui/core": "^4.9.5",
+		"@material-ui/core": "^4.9.11",
 		"@material-ui/icons": "^4.9.1",
 		"@nestjsx/crud-request": "^4.4.1",
 		"next": "^9.3.0",
